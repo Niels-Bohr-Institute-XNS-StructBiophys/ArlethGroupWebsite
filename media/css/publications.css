@@ -1,0 +1,17 @@
+#PublicationsList div{margin:12px 0;padding:4px 10px 4px 10px;background:#eee;overflow:hidden;}
+#PublicationsList p{margin:12px 0;padding:4px 10px 4px 10px;background:#eee;}.PublicationImage{width:120px;float:right;padding:0;margin:0;border:none;}
+#PublicationsList ul{margin:0;padding:0;list-style-type:none;background:#eee;}
+#PublicationsList li{padding:2px 0;}
+#PublicationsList li.author{font-variant:small-caps;font-size:95%;}
+#PublicationsList li.title{font-style:italic;}
+#PublicationsList li.title a{text-decoration:none;}
+#PublicationsList li.title a:hover{color:#555;}
+#PublicationsList li.journal{font-size:85%;line-height:120%;padding-top:2px;padding-bottom:2px;}
+#PublicationsList li.links{font-size:85%;line-height:120%;padding-top:2px;padding-bottom:2px;}
+#PublicationsList li.links a{text-decoration:none;}
+#PublicationsList li.links a:hover{color:#555;}
+#PublicationsList img{border-style:none;vertical-align:bottom;padding-bottom:-1px;padding-left:1px;padding-right:3px;}
+#BibTeXLink{text-align:right;font-size:85%;line-height:120%;padding-top:2px;padding-bottom:2px;}
+#BibTeXLink a{text-decoration:none;}
+#BibTeXLink a:hover{color:#555;}
+#BibTeXLink img{border-style:none;vertical-align:bottom;padding-bottom:-1px;padding-left:1px;padding-right:3px;}.FigureBox{width:220px;float:right;font-size:80%;padding:0;margin:8px;border:8px solid white;}.FigureBox img{width:220px;padding:0;margin:0;border-width:0;}.FigureBox:after{content:"(mouseover to enlarge)";color:#888;text-align:right;display:block;}.FigureBox:hover{width:440px;float:none;}.FigureBox:hover img{width:440px;}.Article{background:#eee;padding:10px;margin:0;}.Article p{padding:0;margin-top:8px;margin-bottom:4px;text-align:justify;}.Article ul{padding:0;margin:0;margin-left:25px;text-align:justify;}.ArticleImage{width:200px;float:right;padding:0;font-size:85%;margin:0 0 10px 10px;border:6px solid white;background:#eee;}.ArticleImage img{width:200px;padding:0;margin:0;border-width:0;}.ArticleLinks{font-size:85%;line-height:120%;padding-top:2px;padding-bottom:2px;text-align:left!important;}
