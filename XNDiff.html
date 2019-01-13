@@ -24,7 +24,9 @@
           <a href="ForStudents.html">For students</a> </div>
         <div id="HeaderSubMenu">
           <a href="WillItFit.html">Will It Fit</a>
+          <a href="BayesFit.html">BayesFit</a>
           <a href="CaPP.html">CaPP</a>
+          <a href="XNDiff.html">XNDiff</a>
         </div>
       </div>
       <div id="Main">
@@ -33,19 +35,38 @@
               src="./media/images/unicph.png" /></a>
         </div>
         <div id="Content">
-          <h2>Will It Fit</h2>
+          <h2>XNDiff</h2>
           <p>
-            WillItFit is an analysis tool for refining structural models from small-angle scattering data. It relies on standard minimisation methods to find models of maximum likelihood from (several sets of) data. The code is open source and written with a focus on flexibility and customisability. In particular, models written in C can be added to the library using the outlined formalisms.</br>
+            XNDiff allows to compute X-ray and neutron powder diffraction patterns of an ensemble of nanocrystals dispersed in solution. It is mainly intended for the analysis of small-angle X-ray and neutron scattering (SAXS, SANS) patterns which exhibit broad Bragg peaks in the small-angle scattering range (image below left).</br>
+            </br>
+            Typically that is the case for dispersions of organic nanocrystals, such as from alkanes, mono-, di- and triglycerides, with disc- or platelet-like shapes, where the longest axis of the unit cell coincides with the direction of the smallest dimension of the nanocrystals. The Bragg peak(s) can provide some extra information beside the diffuse small-angle scattering signal since its width, shape and position can be quite sensitive on the thicknesses of the nanocrystals as well as the structure (thicknesses, scattering length densities) of a surrounding (stabilizer layer) shell.</br>
+
+            <div class="row">
+            <img width="200" style="padding: 10px;" src="media/images/Software/xndiffsas.png"/>
+            <img width="200" style="padding: 10px;" src="media/images/Software/xndiffmod.png"/> 
+            </div>
+
+            Crystal structures can be provided in the CIF format and custom symmetry operations can be applied.</br>
+            The present version allows simulations of nanocrystals with two shells around them (image above right), what is useful in the case of stabilizers and additives located on the surface of the nanocrystals. The nanocrystals have a parallelepidal shape (image below left), based on the unit cell's geometry, where all three dimensions may be subject to size distributions (Gaussian, Lognormal). The scattering patterns of nanocrystal assemblies such as stacks (image below right) can be computed as well.
+
+
+            <div class="row">
+            <img width="200" style="padding: 10px;" src="media/images/Software/xndiffmoddil.gif"/> 
+            <img width="200" style="padding: 10px;" src="media/images/Software/xndiffmodstacks.gif"/>
+            </div>
+
+            The computed scattering data can be (simultaneously) fitted to different SAXS and SANS patterns with the software BatchMultiFit. Fit parameters are typically the scattering length densities and thicknesses of the shells as well as a volume weighted distribution of the nanocrystal thicknesses (number of unit cells).</br>
+            </br>
+            XNDiff is open source and written in C and parallelized with OpenMP and can be run on any computer or HPC cluster with a *nix-based OS, however it does not (yet) support GPUs. BatchMultiFit is open source as well and written in WolframScript (Mathematica) and can be run in parallel on every supported platform (*nix, Windows, Mac).</br>
           </br>
-            The inner workings of the software are described in:</br>
-            Pedersen, Arleth, & Mortensen (2013)</br>
-            J. Appl. Crystallogr. 46, 1894-1898</br>
+            The inner workings of the software are described in the publications:</br>
+            M. Schmiele et al. <a href="https://doi.org/10.1103/PhysRevE.87.062316"><i>Phys. Rev. E</i> <b>87</b>, 062316 (2013)</a> </br>
+            M. Schmiele et al. <a href="https://doi.org/10.1021/jp502580a"><i>J. Phys. Chem. B</i> <b>118</b>(29), 8808-8818 (2014)</a> </br>
           </br>
-        </br>
-            The code repositories of WillItFit are currently hosted on <a href="https://sourceforge.net/projects/willitfit">Sourceforge</a></br>
+            This software is developed, and maintained, by Martin Schmiele. </br>
+            The code repositories are hosted on the Github pages of <a href="https://github.com/Niels-Bohr-Institute-XNS-StructBiophys/XNDiff">XNDiff</a> and <a href="https://github.com/Niels-Bohr-Institute-XNS-StructBiophys/BatchMultiFit">BatchMultiFit</a>.</br>
 
           </p>
-
 
           </ul>
 
