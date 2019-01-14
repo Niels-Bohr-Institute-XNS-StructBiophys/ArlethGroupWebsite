@@ -23,47 +23,38 @@
           <a href="Software.html">Software</a>
           <a class="HeaderMenuActive" href="ForStudents.html">For students</a> </div>
         <div id="HeaderSubMenu">
-          <a href="ForStudents.html">Available projects</a>
-          <a href="FormerProjects.html">Former projects</a>
+          <a href="ForStudents.html">Overview</a>
         </div>
       </div>
       <div id="Main">
         <div class="ContentFullWidth">
-            <h2>Structural Characterization of Protein-based Drugs by Small-Angle Scattering (SAS)</h2>
-            <h4>Master project in the group of Prof. Lise Arleth, Niels Bohr Institute, HCØ</h4>
+            <h2>Parallel computing for a faster analysis of small-angle scattering patterns of macromolecules in dispersion (MSc project)</h2>
             <p>
-              The LINX (Linking Industry to Neutrons and X-rays) group at NBI is involved in a project with the company Novo Nordisk in which insulin based formulations are studied with small-angle X-ray and neutron scattering (SAXS, SANS). SAXS and SANS can be used to study the structure of macromolecules such as proteins in solutions on molecular length scales. The modeling of the scattered intensity can be done with the so-called Debye sum, a double-sum, which coherently sums up the scattered intensity from all atoms belonging to the macromolecular structure. Since the number of atoms N can be very large (typ. 10<sup>4</sup>-10<sup>5</sup>) and the summation is of complexity O(N<sup>2</sup>), different strategies must be applied to make the computations more efficiently.
-              Besides looking at improvements of the underlying computational algorithm we are currently investigating the potential of using graphics cards to tackle the computational complexity. The currently used software, Will It Fit (WIF, written in C, Martin C. Pedersen et al <i>J. Appl. Cryst.</I> <b>46</b>, 1894-1898 (2013)), which does the model calculations and fitting to experimental datasets can be run on multi-CPU systems using OpenMP parallelization. The aim of this project is to enhance the existing WIF code such that it can make use of the computational power of modern graphic cards and by this to facilitate the modeling of very large macromolecular assemblies such as insulin oligomers within reasonable time scales.
-              In the project, the student will have a chance to interact with the collaborators from industry while still being in an academic environment. This is a good chance to get a feel for how academic skills and techniques can be put to work in an industrial research and development setting.
-
+               Small-angle X-ray and neutron scattering (SAXS, SANS) can be used to study the structure of macromolecules such as proteins in solutions on molecular length scales. The modeling of the scattered intensity can be done with the so-called Debye sum, a double-sum, which coherently sums up the scattered intensity from all atoms belonging to the macromolecular structure. Since the number of atoms N can be very large (typ. 10<sup>4</sup>-10<sup>5</sup>) and the summation is of complexity O(N<sup>2</sup>), different strategies must be applied to make the computations more efficiently.</br>
+              </br>
+              Besides looking at improvements of the underlying computational algorithm we are currently investigating the potential of using graphics cards to tackle the computational complexity. The currently used software, Will It Fit (WIF, written in C, Martin C. Pedersen et al <i>J. Appl. Cryst.</I> <b>46</b>, 1894-1898 (2013)), which does the model calculations and fitting to experimental datasets can be run on multi-CPU systems using OpenMP parallelization. The aim of this project is to enhance the existing WIF code such that it can make use of the computational power of modern graphic cards and by this to facilitate the modeling of very large macromolecular assemblies such as insulin oligomers within reasonable time scales.</br>
+              </br>
             </p>
-            <p style="text-align: center; margin-top: 20px; font-size:12px"> <img width=95% src="media/images/wif_project.png"
-            alt="SAXS instrument"/></br>
+            <p style="text-align: center; margin-top: 20px; font-size:12px"> <img width=90% src="media/images/Students/wif_project.png"
+            alt="SAS Workflow"/></br>
             </p>
             <p>
-              <div class="underline">Requirements:</div>
+              <div class="underline">Your profile:</div>
               <ul>
-                <li>Ability to quickly acquire new knowledge, a background in (bio)physics is recommended.
-                <li>Knowledge of at least one programming language, programming skills in C would be very helpful, knowledge about code parallelization in general and in particular for GPUs is a bonus.
+                <li>Ability to quickly acquire new knowledge and a background in (bio)physics is recommended.
+                <li>Knowledge of at least one programming language, programming skills in C would be very helpful.
+                <li>Knowledge about code parallelization in general and in particular for OpenCL and CUDA are a bonus.
               </ul>
-            </br>
-
               <div class="underline">Tasks:</div>
               <ul>
                 <li>Get familiar with the small-angle scattering technique, learn how it can it can be used to analyze the structure of proteins in solution and how the existing CPU-based WIF code works.
-                <li>Use one  framework (OpenCL or CUDA) to adapt the existing computational scheme in such a way that it can be efficiently run on a GPU.
-                <li>Test and benchmark the  software with SAXS data of an insulin-based formulation.
+                <li>Use one framework (OpenCL or CUDA) to adapt the existing computational scheme in such a way that it can be efficiently run on a GPU.
+                <li>Test and benchmark the software with experimental SAXS data of a protein formulation.
                 <li>If time permits: Conduct an own SAXS measurement on our lab-based SAXS camera or join group members to a SAXS or SANS beamtime at a European large scale facility (synchrotron or neutron source).
               </ul>
             </br>
-              If you are interested or you have any questions, contact Erik Brok or Martin Schmiele. See <a href="GroupMembers.html">Group members page</a>. More information on your future work group and LINX can be found at:</br>
-              <ul>
-                <li> <a href="www.arlethgroup.nbi.dk">arlethgroup webpage</a>
-                <li> <a href="www.linxproject.dk">LINX webpage</a>
-              </ul>
-            </br>
-          </br>
-        </br>
+              If you are interested or you have any questions, contact Erik Brok or Martin Schmiele. See <a href="GroupMembers.html">Group members page</a>.
+            </p>
         </div>
       </div>
     </div>
